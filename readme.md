@@ -42,7 +42,7 @@ project-root/
 
 2. Open the `dist/index.html` file in a web browser to view the template.
 
-3. Modify the CSS in `css/styles.css` or add your own Tailwind classes in the HTML files as needed.
+3. Modify the CSS in `src/input.css` or add your own Tailwind classes in the HTML files as needed.
 
 4. Edit `scripts.js` to customise interactivity.
 
