@@ -22,8 +22,8 @@ This project contains a simple, responsive webpage template built using **HTML**
 project-root/
 ├── dist/
 │   └── index.html          # Main HTML template
-├── css/
-│   └── styles.css          # Custom CSS styles
+├── src/
+│   └── input.css          # Custom CSS styles
 ├── scripts.js              # JavaScript functionality
 ├── README.md               # Project overview and instructions
 └── assets/                 # (Optional) images, fonts, icons, etc.
