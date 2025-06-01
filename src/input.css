@@ -1,0 +1,55 @@
+/*
+  File        : styles.css
+  Date Created: 2025-06-01
+  Author      : Callum Apps
+  Description : Custom CSS styles for the webpage, including button styling that complements Tailwind CSS.
+  
+  Notes:
+    - This file contains styles that override or extend Tailwind's default utility classes.
+    - Use classes like `.ExampleButton` to apply these custom styles.
+    - Make sure to link this CSS file in your HTML after loading Tailwind CSS for proper override.
+*/
+
+@tailwind base;
+
+@font-face {
+  font-family: "montserratthin_italic";
+  src: url("montserrat-italic-variablefont_wght-webfont.woff2") format("woff2"),
+       url("montserrat-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "montserratthin_italic", system-ui, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Style for buttons with class "ExampleButton" */
+.ExampleButton {
+  background-color: rgba(248, 56, 56, 0.993); /* Bright red background */
+  border-radius: 4px;                           /* Rounded corners */
+  color: white;                               /* White text */
+  align-self: center;                           /* Centers the button if inside a flex container */
+  padding-left: 16px;                           /* Horizontal padding */
+  padding-right: 16px;  
+  padding-top: 8px;                             /* Vertical padding */
+  padding-bottom: 8px;  
+  margin-top: 2px;                              /* Small top margin */
+  cursor: pointer;                              /* Changes cursor to pointer on hover */
+} 
+
+/* Change background color when hovering over the button */
+.ExampleButton:hover {
+  background-color: rgba(190, 23, 23, 0.993); /* Slightly darker red */
+}
+

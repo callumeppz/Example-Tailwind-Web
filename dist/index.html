@@ -1,0 +1,116 @@
+<!-- 
+  File        : index.html
+  Date Created: 2025-06-01
+  Author      : Callum Apps
+  Description : This is the main HTML template for a webpage. It includes a 
+                button that interacts with JavaScript and uses Tailwind CSS.
+                
+  Tailwind CSS:
+    - Tailwind is included via CDN in the <head>:
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    - Use Tailwind utility classes directly on HTML elements, or use your own created CSS styles from input.css.
+      Example:
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Click Me
+        </button>
+      Example:
+        <button class="ExampleButton">
+          Click Me
+        </button>
+
+  JavaScript:
+    - The script.js file handles interactive logic like button click events.
+    - It should be linked in the HTML using <script src="scripts.js" defer></script>.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Web Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="dist/github.png" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4">
+      <nav class="flex justify-between items-center max-w-7xl mx-auto">
+        <h1 class="text-xl font-bold">Template</h1>
+        <div class="space-x-4">
+          <!-- These are clickable buttons with a link to another page done 
+              using "href" add more as necessary -->
+          <a href="index.html" class="hover:text-orange-300">Home</a>
+          <a href="about.html" class="hover:text-orange-300">About</a>
+          <a href="contact.html" class="hover:text-orange-300">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-6 max-w-7xl mx-auto">
+      <!-- Replace this section with your content -->
+      <h2 class="text-2xl font-semibold mb-4">Welcome</h2>
+      <p>This is a base layout template.</p>
+
+      <!-- These styles are the same, but use two different methods of styling, Tailwind presets, and personalised css, which is set in the class tag. -->
+      <button id="ExampleButtonTAIL" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Click me</button>
+       <p id="ExampleMessageTAIL"></p> <!-- Empty paragraph to show message -->
+
+       <button id="ExampleButtonCSS" class="ExampleButton"><b>Click me</b></button>
+       <p id="ExampleMessageCSS"></p> <!-- Empty paragraph to show message -->
+
+<!-- Main page content examples and common HTML elements:
+
+    <button>    : Used for clickable actions like submitting forms, opening dropdowns, or triggering scripts.
+    <p>         : Defines a paragraph. Used for blocks of text or descriptions.
+    <h1> to <h6>: Used for headings. <h1> is the highest level (main title), <h6> is the smallest subsection.
+    <a href=""> : Anchor tag. Used to create hyperlinks to other pages, sections, or external sites.
+    <img src="">: Embeds an image. The image must be included in the project or linked via a URL.
+    <li>        : List item. Used inside <ul> (unordered) or <ol> (ordered) lists.
+    <div>       : Generic container for grouping content. Useful for layout and CSS styling.
+    <span>      : Inline container, often used for styling specific words or phrases within text.
+    <input>     : Collects user input in forms. Includes types like text, checkbox, radio, etc.
+    <form>      : Wraps input elements to collect and submit data.
+    <label>     : Describes an input field, improving accessibility.
+    <table>     : Creates a table structure. Use with <tr> (row), <td> (cell), <th> (header cell).
+    <section>   : Defines a standalone section of related content.
+    <article>   : Represents self-contained content, like a blog post or news entry.
+    <nav>       : Denotes a navigation menu or group of navigation links.
+    <footer>    : Contains footer content, typically at the bottom of the page (e.g. copyright).
+    <header>    : Represents introductory content or navigation links at the top of a page/section.
+    <br>        : Line break. Moves content to a new line (used sparingly).
+    <hr>        : Horizontal rule. Inserts a visual break or thematic division.
+
+    HTML Styling Note:
+      HTML elements can have attributes such as:
+      class    : Used with CSS to apply styles.
+      id       : Unique identifier, useful for styling, JavaScript, and linking.
+      style    : Inline CSS styling.
+      onclick  : JavaScript function triggered on click.
+      alt      : Descriptive text for images for when they cannot be loaded.
+     
+    CSS & JS Note:
+      To modify the appearance of these features, this is done in the css file and already pre-linked in 
+      the head of this file to src/input.css. 
+
+      A script file is also linked, which will be used for storing javascript functions used in the webpage, 
+      this would include functions that are called when a specific action is completed on the page. 
+
+-->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4 text-center">
+      <p>&copy; 2025, All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
